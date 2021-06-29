@@ -25,6 +25,8 @@ async def on_ready():
 
   print(f"Logged in as {bot.user.name} - {bot.user.id}")
 
+  bot.load_extension('cogs.game')
+  
   return
 
 bot.run(os.environ['DISCORD_BOT_TOKEN'])
