@@ -4,6 +4,12 @@ from discord.ext import commands
 
 
 
+# <----------------[MATPLOTLIB SETUP]----------------> #
+
+os.environ['MPLCONFIGDIR'] = os.getcwd()+"/configs/"
+
+
+
 # <-------------------[BOT SETUP]--------------------> #
 
 bot = commands.Bot(

@@ -12,12 +12,6 @@ from sympy.parsing.sympy_parser import (
 )
 
 
-# <----------------[MATPLOTLIB SETUP]----------------> #
-
-import os
-os.environ['MPLCONFIGDIR'] = os.getcwd()+"/configs/"
-
-
 
 # <----------------[PARSE EXPRESSION]----------------> #
 
