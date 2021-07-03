@@ -35,6 +35,7 @@ async def on_ready():
   bot.load_extension('cogs.graph')
   bot.load_extension('cogs.stack')
   bot.load_extension('cogs.postcodes')
+  bot.load_extension('cogs.budget')
   
   return
 
