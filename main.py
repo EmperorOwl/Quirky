@@ -1,6 +1,7 @@
 import os
 import replit
 from discord.ext import commands
+from replit import db
 
 
 
@@ -30,6 +31,7 @@ async def on_ready():
   replit.clear() # clears terminal
 
   print(f"Logged in as {bot.user.name} - {bot.user.id}")
+  print(f"Database: {db.keys()}")
 
   bot.load_extension('cogs.game')
   bot.load_extension('cogs.graph')
