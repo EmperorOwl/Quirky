@@ -1,6 +1,7 @@
 import discord
-import time
+import pytz
 from replit import db
+from datetime import datetime
 
 
 
@@ -10,9 +11,11 @@ def getTimetableEmbed(ctx):
 
   timetable = db['timetables'][str(ctx.author.id)]
 
+  aus = pytz.timezone("Australia/Melbourne")
+
   embed = discord.Embed(
     title = f"{ctx.author.display_name}'s Timetable Manager 📅",
-    description = f'```ini\nKeep track of your classes. Current time: [{time.strftime("%H:%M:%S")}]```',
+    description = f'```ini\nKeep track of your classes. Current time: [{datetime.now().astimezone(aus).strftime("%H:%M:%S")}]```',
     color = discord.Colour.green()
   )
 
