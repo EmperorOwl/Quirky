@@ -80,6 +80,8 @@ class cogBudget(commands.Cog, name="Budget Calculator"):
 
     await ctx.send(content=content)
 
+    return
+
 
 
   # <------------------[CMD RESET]-------------------> #
@@ -92,6 +94,8 @@ class cogBudget(commands.Cog, name="Budget Calculator"):
     content = f"**😥 | {ctx.author.display_name}**, your budget has been reset."
 
     await ctx.send(content=content)
+
+    return
 
   
 
