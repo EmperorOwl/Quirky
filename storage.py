@@ -1,3 +1,5 @@
+bot_version = "1.0.0"
+
 reactions_dict = {
   'A': '🇦', 
   'B': '🇧',

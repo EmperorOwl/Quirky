@@ -1,5 +1,6 @@
 import os
 import replit
+import discord
 from discord.ext import commands
 from replit import db
 
@@ -11,6 +12,14 @@ os.environ['MPLCONFIGDIR'] = os.getcwd()+"/configs/"
 
 
 
+# <--------------[INTENTS SETUP]------------------> #
+
+intents = discord.Intents.default()
+
+intents.members = True # enables bot to track number of servers and users who use the bot
+
+
+
 # <-------------------[BOT SETUP]--------------------> #
 
 bot = commands.Bot(
@@ -18,6 +27,8 @@ bot = commands.Bot(
   case_insensitive = True,
 
   command_prefix = '.',
+
+  intents = intents
 
 )
 
@@ -39,6 +50,7 @@ async def on_ready():
   bot.load_extension('cogs.postcodes')
   bot.load_extension('cogs.budget')
   bot.load_extension('cogs.timetable')
+  bot.load_extension('cogs.other')
   
   return
 
