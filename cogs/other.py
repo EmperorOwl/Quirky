@@ -1,4 +1,5 @@
 import time
+import discord
 from discord.ext import commands
 from replit import db
 
@@ -46,6 +47,27 @@ class cogOther(commands.Cog):
     end = time.perf_counter()
     t_t = (end - start) * 1000
     await msg.edit(content="Pong! {:.2f}ms".format(t_t))
+
+    return
+
+
+
+  # <------------------[CMD INVITE]------------------> #
+
+  @commands.command(
+    name = 'invite',
+    description = "Add Quirky to another server.",
+    aliases = []
+  )
+  async def cmdInvite(self, ctx):
+
+    embed = discord.Embed(
+      title = "Thanks for playing with Quirky!",
+      description = "To add the bot to another server, click [here](https://discord.com/api/oauth2/authorize?client_id=848030918920634448&permissions=1074063424&scope=bot).",
+      color = discord.Colour.blue()
+    )
+
+    await ctx.send(embed=embed)
 
     return
 
