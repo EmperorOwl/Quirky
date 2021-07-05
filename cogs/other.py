@@ -1,4 +1,5 @@
 from discord.ext import commands
+from replit import db
 
 
 
@@ -27,6 +28,46 @@ class cogOther(commands.Cog):
 
     await ctx.send(embed=embed)
   
+    return
+
+
+
+  # <------------------[CMD PREFIX]------------------> #
+
+  @commands.command(
+    name = 'prefix',
+    description = "Change the prefix.",
+    aliases = []
+  )
+  async def cmdPrefix(self, ctx, prefix):
+
+    db['prefixes'] = {
+      ctx.guild.id: {'prefix': prefix}
+    }
+
+    content = f"**👍 | {ctx.author.display_name}**, the prefix to play with Quirky in this server has been changed to `{prefix}`"
+
+    await ctx.send(content=content)
+
+    return
+
+  
+
+  # <------------------[CMD SETUP]-------------------> #
+
+  @commands.command(
+    name = 'prefixsetup',
+    description = "Setup or reset prefix database."
+  )
+  @commands.is_owner()
+  async def cmdSetup(self, ctx):
+    
+    db['prefixes'] = {}
+
+    content = f"**👍  |  {ctx.author.name}**, prefix database has undergone first setup or full reset."
+
+    await ctx.send(content=content)
+
     return
 
 
