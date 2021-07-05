@@ -1,3 +1,4 @@
+import time
 from discord.ext import commands
 from replit import db
 
@@ -28,6 +29,24 @@ class cogOther(commands.Cog):
 
     await ctx.send(embed=embed)
   
+    return
+
+
+  # <-------------------[CMD PING]-------------------> #
+
+  @commands.command(
+    name = 'ping',
+    description = "Check the ping.",
+    aliases = []
+  )
+  async def cmdPing(self, ctx):
+
+    start = time.perf_counter()
+    msg = await ctx.send(content="Pinging...")
+    end = time.perf_counter()
+    t_t = (end - start) * 1000
+    await msg.edit(content="Pong! {:.2f}ms".format(t_t))
+
     return
 
 
