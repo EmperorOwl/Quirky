@@ -12,7 +12,7 @@ os.environ['MPLCONFIGDIR'] = os.getcwd()+"/configs/"
 
 
 
-# <--------------[INTENTS SETUP]------------------> #
+# <-----------------[INTENTS SETUP]------------------> #
 
 intents = discord.Intents.default()
 
