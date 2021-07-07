@@ -26,7 +26,7 @@ class cogOther(commands.Cog):
 
     from modules.other import getAboutEmbed
 
-    embed = getAboutEmbed(self)
+    embed = getAboutEmbed(ctx)
 
     await ctx.send(embed=embed)
   
