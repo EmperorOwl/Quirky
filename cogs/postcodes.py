@@ -233,31 +233,40 @@ class cogPostcodes(commands.Cog, name="Postcodes"):
   @commands.is_owner()
   async def cmdDelete(self, ctx, *, target_suburb):
     
+    found = False
+
     postcodes_file = open('postcodes.txt', 'r')
     lines = postcodes_file.readlines()
     line_num = 0
     for line in lines:
         
-        suburb = line.split(', ')[0]
-        
-        if (    target_suburb.upper() in line 
-            and len(target_suburb) == len(suburb)
-        ):
+      suburb = line.split(', ')[0]
+      
+      if (    target_suburb.upper() in line 
+          and len(target_suburb) == len(suburb)
+      ):
 
-          del lines[line_num]
+        del lines[line_num]
+        found = True
 
-        line_num += 1
+      line_num += 1
   
     postcodes_file.close()
 
-    new_postcodes_file = open('postcodes.txt', 'w')
+    if found == True:
 
-    for line in lines:
-      new_postcodes_file.write(line)
+      new_postcodes_file = open('postcodes.txt', 'w')
 
-    new_postcodes_file.close()
+      for line in lines:
+        new_postcodes_file.write(line)
 
-    content = f"**{target_suburb.title()}** has been deleted."
+      new_postcodes_file.close()
+
+      content = f"**{target_suburb.title()}** has been deleted."
+
+    else:
+
+      content = f"**{target_suburb.title()}** does not exist!"
 
     await ctx.send(content=content)
 
