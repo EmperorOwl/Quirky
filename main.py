@@ -68,6 +68,7 @@ async def on_ready():
   bot.load_extension('cogs.timetable')
   bot.load_extension('cogs.other')
   bot.load_extension('cogs.error')
+  bot.load_extension('cogs.help')
   
   return
 
