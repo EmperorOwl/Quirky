@@ -94,6 +94,10 @@ class cogError(commands.Cog):
 
         content = f"**☹️ | {ctx.author.display_name}**, the lower and upper bounds for x have to be numbers."
 
+      elif ctx.command.qualified_name == 'postcodes add':
+
+        content = f"**☹️ | {ctx.author.display_name}**, the postcode must be a number." 
+
       elif ctx.command.qualified_name == 'budget add':
 
         content = f"**☹️ | {ctx.author.display_name}**,the amount to add must be a number!\nThe correct syntax is `.budget add <type> <amount>`." 
