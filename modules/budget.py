@@ -33,27 +33,27 @@ def getBudgetEmbed(ctx):
   embed.add_field(
     name = "Income",
     value = (
-      f"Allowance: `${budget['allowance']}`\n"
-      f"Job: `${budget['job']}`\n"
-      f"Other: `${budget['otherinc']}`\n"
+      f"Allowance: `${budget['allowance']:.2f}`\n"
+      f"Job: `${budget['job']:.2f}`\n"
+      f"Other: `${budget['otherinc']:.2f}`\n"
     )
   )
 
   embed.add_field(
     name = "Expenditure",
     value = (
-      f"Experiences: `${budget['experiences']}`\n"
-      f"Material Goods: `${budget['things']}`\n"
-      f"Other: `${budget['otherexp']}`\n"
+      f"Experiences: `${budget['experiences']:.2f}`\n"
+      f"Material Goods: `${budget['things']:.2f}`\n"
+      f"Other: `${budget['otherexp']:.2f}`\n"
     )
   )
 
   embed.add_field(
     name = "Summary",
     value = (
-      f"Total Income: `${summary[0]}`\n"
-      f"Total Expenditure: `${summary[1]}`\n"
-      f"Total Savings: `${summary[2]}`\n"
+      f"Total Income: `${summary[0]:.2f}`\n"
+      f"Total Expenditure: `${summary[1]:.2f}`\n"
+      f"Total Savings: `${summary[2]:.2f}`\n"
     )
   )
 

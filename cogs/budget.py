@@ -72,7 +72,7 @@ class cogBudget(commands.Cog, name="Budget Calculator"):
 
       budget[form] = amount
 
-      content = f"**💹 | {ctx.author.display_name}**, successfully added `${amount}` to `{form.title()}`."
+      content = f"**💹 | {ctx.author.display_name}**, successfully added `${amount:.2f}` to `{form.title()}`."
 
     else:
 
