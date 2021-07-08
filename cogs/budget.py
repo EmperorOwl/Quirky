@@ -76,7 +76,7 @@ class cogBudget(commands.Cog, name="Budget Calculator"):
 
     else:
 
-      content = f"**☹️ | {ctx.author.display_name}**, incorrect type of budget. Use either allowance, job, otherinc, experiences, things or otherexp."
+      content = f"**☹️ | {ctx.author.display_name}**, incorrect type of budget.\nUse either `allowance`, `job`, `otherinc`, `experiences`, `things` or `otherexp`."
 
     await ctx.send(content=content)
 

@@ -43,7 +43,7 @@ def getBudgetEmbed(ctx):
     name = "Expenditure",
     value = (
       f"Experiences: `${budget['experiences']:.2f}`\n"
-      f"Material Goods: `${budget['things']:.2f}`\n"
+      f"Things: `${budget['things']:.2f}`\n"
       f"Other: `${budget['otherexp']:.2f}`\n"
     )
   )
