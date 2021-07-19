@@ -1,5 +1,6 @@
 import os
 import replit
+import topgg
 import discord
 from discord.ext import commands
 from replit import db
@@ -47,6 +48,29 @@ bot = commands.Bot(
   intents = intents
 
 )
+
+
+
+# <------------------[TOPGG SETUP]-------------------> #
+
+bot.topggpy = topgg.DBLClient(
+  bot, 
+  token = os.environ['TOP_GG_TOKEN'], 
+  autopost = True, 
+  post_shard_count= True
+)
+
+
+
+# <------------------[TOPGG UPDATE]------------------> #
+
+@bot.event
+async def on_autopost_success():
+  
+  # updates top.gg server count every half hour
+  print(f"Posted server count ({bot.topggpy.guild_count}) to top.gg")
+
+  return
 
 
 
