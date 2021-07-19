@@ -37,7 +37,7 @@ def getAboutEmbed(ctx):
 
       '\n'
 
-      "[Replit Spotlight](https://replit.com/@EmperorOwl/Quirky) ~ [Invite Me](https://discord.com/api/oauth2/authorize?client_id=848030918920634448&permissions=1074063424&scope=bot) ~ [Github Repository](https://github.com/EmperorOwl/Quirky)"
+      "[Replit Spotlight](https://replit.com/@EmperorOwl/Quirky) ~ [Top.gg Site](https://top.gg/bot/848030918920634448) ~ [Invite Me](https://discord.com/api/oauth2/authorize?client_id=848030918920634448&permissions=1074063424&scope=bot) ~ [Github Repository](https://github.com/EmperorOwl/Quirky)"
 
     ),
     color = discord.Colour.purple()
