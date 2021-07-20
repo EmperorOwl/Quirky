@@ -82,9 +82,9 @@ class cogOther(commands.Cog):
   )
   async def cmdPrefix(self, ctx, prefix):
 
-    db['prefixes'] = {
-      ctx.guild.id: {'prefix': prefix}
-    }
+    prefixes = db['prefixes']
+    prefixes.update({ctx.guild.id: {'prefix': prefix}})
+    db['prefixes'] = prefixes
 
     content = f"**👍 | {ctx.author.display_name}**, the prefix to play with Quirky in this server has been changed to `{prefix}`"
 
