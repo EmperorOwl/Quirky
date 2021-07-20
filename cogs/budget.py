@@ -25,9 +25,9 @@ class cogBudget(commands.Cog, name="Budget Calculator"):
   )
   async def grpBudget(self, ctx):
 
-    if str(ctx.author.id) not in db['budgets'].keys(): 
- 
-      db['budgets'] = {
+    if str(ctx.author.id) not in db['budgets'].keys():
+
+      db['budgets'].update({
         ctx.author.id: {
           'allowance': 0,
           'job': 0,
@@ -36,7 +36,7 @@ class cogBudget(commands.Cog, name="Budget Calculator"):
           'things': 0,
           'otherexp':0,
         }
-      }
+      })
 
     if ctx.invoked_subcommand is None:
 
@@ -70,7 +70,7 @@ class cogBudget(commands.Cog, name="Budget Calculator"):
 
     if form in budget.keys():
 
-      budget[form] = amount
+      budget.update({form: amount})
 
       content = f"**💹 | {ctx.author.display_name}**, successfully added `${amount:.2f}` to `{form.title()}`."
 
