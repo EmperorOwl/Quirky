@@ -27,7 +27,7 @@ class cogTimetable(commands.Cog, name="Timetable Manager"):
 
     if str(ctx.author.id) not in db['timetables'].keys(): 
  
-      db['timetables'] = {
+      db['timetables'].update({
         ctx.author.id: {
           'monday': 
             ['P1', 'P2', 'P3', 'P4', 'P5', 'P6'],
@@ -40,7 +40,7 @@ class cogTimetable(commands.Cog, name="Timetable Manager"):
           'friday': 
             ['P1', 'P2', 'P3', 'P4', 'P5', 'P6'],
         }
-      }
+      })
     
     if ctx.invoked_subcommand is None:
 
@@ -70,11 +70,12 @@ class cogTimetable(commands.Cog, name="Timetable Manager"):
   @grpTimetable.command(name='edit')
   async def cmdEdit(self, ctx, day, p1, p2, p3, p4, p5, p6):
 
+    day = day.lower()
     timetable = db['timetables'][str(ctx.author.id)]
 
-    if day.lower() in timetable.keys():
+    if day in timetable.keys():
 
-      timetable[day.lower()] = [p1, p2, p3, p4, p5, p6]
+      timetable.update({day: [p1, p2, p3, p4, p5, p6]})
 
       content = f"**📅 | {ctx.author.display_name}**, successfully updated your schedule for {day.title()}."
 
