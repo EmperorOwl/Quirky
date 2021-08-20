@@ -7,17 +7,17 @@ A Discord bot quirky enough to have an alphabet game for toddlers and a graphing
 &nbsp;
 
 ## Commands
-- `.play` - Play the alphabet game!
-- `.graph` - Plot the graph of an equation!
-- `.stack` - Stack some coins!
-- `.postcodes` - View and find postcodes!
-- `.budget` - Calculate your savings!
-- `.timetable` - View and edit a school timetable!
-- `.help` - Check out the help page.
-- `.about` - Check out the about page.
-- `.ping` - Check the ping.
-- `.invite` - Add Quirky to another server.
-- `.prefix` - Change the prefix.
+- `q!play` - Play the alphabet game!
+- `q!graph` - Plot the graph of an equation!
+- `q!stack` - Stack some coins!
+- `q!postcodes` - View and find postcodes!
+- `q!budget` - Calculate your savings!
+- `q!timetable` - View and edit a school timetable!
+- `q!help` - Check out the help page.
+- `q!about` - Check out the about page
+- `q!ping` - Check the ping.
+- `q!invite` - Add Quirky to another server.
+- `q!prefix` - Change the prefix.
 
 &nbsp;
 
