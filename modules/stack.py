@@ -3,7 +3,7 @@ from datetime import datetime
 
 
 
-# <----------------[GET STACK EMBED]-----------------> #
+# <--------------[GET STACK EMBED]----------------> #
 
 def getStackEmbed(stack, box_emoji):
 

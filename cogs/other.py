@@ -5,7 +5,7 @@ from replit import db
 
 
 
-# <-------------------[COG OTHER]--------------------> #
+# <-----------------[COG OTHER]-------------------> #
 
 class cogOther(commands.Cog):
 
@@ -16,7 +16,7 @@ class cogOther(commands.Cog):
 
 
 
-  # <------------------[CMD ABOUT]-------------------> #
+  # <----------------[CMD ABOUT]------------------> #
 
   @commands.command(
     name = 'about',
@@ -33,7 +33,7 @@ class cogOther(commands.Cog):
     return
 
 
-  # <-------------------[CMD PING]-------------------> #
+  # <-----------------[CMD PING]------------------> #
 
   @commands.command(
     name = 'ping',
@@ -52,7 +52,7 @@ class cogOther(commands.Cog):
 
 
 
-  # <------------------[CMD INVITE]------------------> #
+  # <----------------[CMD INVITE]-----------------> #
 
   @commands.command(
     name = 'invite',
@@ -73,7 +73,7 @@ class cogOther(commands.Cog):
 
 
 
-  # <------------------[CMD PREFIX]------------------> #
+  # <----------------[CMD PREFIX]-----------------> #
 
   @commands.command(
     name = 'prefix',
@@ -94,7 +94,7 @@ class cogOther(commands.Cog):
 
   
 
-  # <------------------[CMD SETUP]-------------------> #
+  # <----------------[CMD SETUP]------------------> #
 
   @commands.command(
     name = 'prefixsetup',

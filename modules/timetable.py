@@ -5,7 +5,7 @@ from datetime import datetime
 
 
 
-# <--------------[GET TIMETABLE EMBED]---------------> #
+# <------------[GET TIMETABLE EMBED]--------------> #
 
 def getTimetableEmbed(ctx):
 

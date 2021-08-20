@@ -13,7 +13,7 @@ from sympy.parsing.sympy_parser import (
 
 
 
-# <----------------[PARSE EXPRESSION]----------------> #
+# <--------------[PARSE EXPRESSION]---------------> #
 
 def parseExpression(eq):
 
@@ -24,7 +24,7 @@ def parseExpression(eq):
 
 
 
-# <-------------------[PLOT GRAPH]-------------------> #
+# <-----------------[PLOT GRAPH]------------------> #
 
 def plotGraph(equation, lower, upper):
 

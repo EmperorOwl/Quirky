@@ -4,7 +4,7 @@ import sys
 
 
 
-# <----------------[GET ABOUT EMBED]-----------------> #
+# <--------------[GET ABOUT EMBED]----------------> #
 
 def getAboutEmbed(ctx):
 

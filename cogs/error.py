@@ -4,7 +4,7 @@ from discord.ext import commands
 
 
 
-# <-------------------[COG ERROR]--------------------> #
+# <-----------------[COG ERROR]-------------------> #
 
 class cogError(commands.Cog):
 
@@ -15,7 +15,7 @@ class cogError(commands.Cog):
 
   
 
-  # <----------------[LISTENER ERROR]----------------> #
+  # <--------------[LISTENER ERROR]---------------> #
 
   @commands.Cog.listener()
   async def on_command_error(self, ctx, error):
@@ -32,7 +32,7 @@ class cogError(commands.Cog):
       
     """
 
-    # <----------[ERROR COMMAND NOT FOUND]-----------> #
+    # <--------[ERROR COMMAND NOT FOUND]----------> #
 
     if isinstance(error, commands.CommandNotFound):
 
@@ -40,7 +40,7 @@ class cogError(commands.Cog):
 
 
 
-    # <-----------[ERROR COMMAND DISABLED]-----------> #
+    # <---------[ERROR COMMAND DISABLED]----------> #
 
     elif isinstance(error, commands.DisabledCommand):
 
@@ -50,7 +50,7 @@ class cogError(commands.Cog):
 
 
 
-    # <-----------[ERROR ARGUMENT MISSING]-----------> #
+    # <---------[ERROR ARGUMENT MISSING]----------> #
 
     elif isinstance(error, commands.MissingRequiredArgument):
 
@@ -86,7 +86,7 @@ class cogError(commands.Cog):
         
 
 
-    # <-------------[ERROR ARGUMENT BAD]-------------> #
+    # <-----------[ERROR ARGUMENT BAD]------------> #
 
     elif isinstance(error, commands.BadArgument):
 

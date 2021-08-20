@@ -7,7 +7,7 @@ from datetime import datetime
 from storage import reactions_dict
 
 
-# <-----------------[GET GAME INFO]------------------> #
+# <---------------[GET GAME INFO]-----------------> #
 
 def getGameInfo():
 
@@ -36,7 +36,7 @@ def getGameInfo():
 
 
 
-# <-----------------[GET GAME EMBED]-----------------> #
+# <---------------[GET GAME EMBED]----------------> #
 
 def getGameEmbed(description, colour):
 

@@ -5,7 +5,7 @@ from replit import db
 from modules.timetable import getTimetableEmbed
 
 
-# <-----------------[COG TIMETABLE]------------------> #
+# <---------------[COG TIMETABLE]-----------------> #
 
 class cogTimetable(commands.Cog, name="Timetable Manager"):
 
@@ -16,7 +16,7 @@ class cogTimetable(commands.Cog, name="Timetable Manager"):
 
   
 
-  # <----------------[GRP TIMETABLE]-----------------> #
+  # <--------------[GRP TIMETABLE]----------------> #
 
   @commands.group(
     name = 'timetable',
@@ -52,7 +52,7 @@ class cogTimetable(commands.Cog, name="Timetable Manager"):
 
 
   
-  # <-------------------[CMD VIEW]-------------------> #
+  # <-----------------[CMD VIEW]------------------> #
 
   @grpTimetable.command(name='view')
   async def cmdView(self, ctx):
@@ -65,7 +65,7 @@ class cogTimetable(commands.Cog, name="Timetable Manager"):
 
 
 
-  # <-------------------[CMD EDIT]-------------------> #
+  # <-----------------[CMD EDIT]------------------> #
   
   @grpTimetable.command(name='edit')
   async def cmdEdit(self, ctx, day, p1, p2, p3, p4, p5, p6):
@@ -89,7 +89,7 @@ class cogTimetable(commands.Cog, name="Timetable Manager"):
 
 
 
-  # <------------------[CMD RESET]-------------------> #
+  # <----------------[CMD RESET]------------------> #
 
   @grpTimetable.command(name='reset')
   async def cmdReset(self, ctx):
@@ -104,7 +104,7 @@ class cogTimetable(commands.Cog, name="Timetable Manager"):
 
 
 
-  # <------------------[CMD SETUP]-------------------> #
+  # <----------------[CMD SETUP]------------------> #
 
   @commands.command(
     name = 'timetablesetup',

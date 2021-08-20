@@ -2,7 +2,7 @@ from discord.ext import commands
 
 
 
-# <--------------------[COG HELP]--------------------> #
+# <------------------[COG HELP]-------------------> #
 
 class cogHelp(commands.Cog):
 
@@ -14,7 +14,7 @@ class cogHelp(commands.Cog):
 
 
 
-  # <-------------------[CMD HELP]-------------------> #
+  # <-----------------[CMD HELP]------------------> #
 
   @commands.command(
     name = 'help',
@@ -29,7 +29,7 @@ class cogHelp(commands.Cog):
 
     await ctx.send(embed=embed)
     
-    pass
+    return
 
 
 

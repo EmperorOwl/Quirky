@@ -3,7 +3,7 @@ from datetime import datetime
 
 
 
-# <-----------------[GET HELP EMBED]-----------------> #
+# <---------------[GET HELP EMBED]----------------> #
 
 def getHelpEmbed(ctx):
 

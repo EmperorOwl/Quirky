@@ -4,7 +4,7 @@ from collections import deque
 
 
 
-# <-------------------[COG STACK]--------------------> #
+# <-----------------[COG STACK]-------------------> #
 
 class cogStack(commands.Cog, name="Stack Simulator"):
 
@@ -15,7 +15,7 @@ class cogStack(commands.Cog, name="Stack Simulator"):
 
 
 
-  # <------------------[CMD STACK]-------------------> #
+  # <----------------[CMD STACK]------------------> #
 
   @commands.command(
     name = 'stack',

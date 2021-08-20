@@ -7,13 +7,13 @@ from replit import db
 
 
 
-# <----------------[MATPLOTLIB SETUP]----------------> #
+# <--------------[MATPLOTLIB SETUP]---------------> #
 
 os.environ['MPLCONFIGDIR'] = os.getcwd()+"/configs/"
 
 
 
-# <-----------------[INTENTS SETUP]------------------> #
+# <---------------[INTENTS SETUP]-----------------> #
 
 intents = discord.Intents.default()
 
@@ -21,7 +21,7 @@ intents.members = True # enables bot to track number of servers and users who us
 
 
 
-# <------------------[PREFIX SETUP]------------------> #
+# <----------------[PREFIX SETUP]-----------------> #
 
 def get_prefix(client, message):
 
@@ -31,13 +31,13 @@ def get_prefix(client, message):
 
   except KeyError: # otherwise set default one
 
-    prefix = '.'
+    prefix = 'q!'
 
   return prefix
 
 
 
-# <-------------------[BOT SETUP]--------------------> #
+# <-----------------[BOT SETUP]-------------------> #
 
 bot = commands.Bot(
 
@@ -51,7 +51,7 @@ bot = commands.Bot(
 
 
 
-# <------------------[TOPGG SETUP]-------------------> #
+# <----------------[TOPGG SETUP]------------------> #
 
 bot.topggpy = topgg.DBLClient(
   bot, 
@@ -62,7 +62,7 @@ bot.topggpy = topgg.DBLClient(
 
 
 
-# <------------------[TOPGG UPDATE]------------------> #
+# <----------------[TOPGG UPDATE]-----------------> #
 
 @bot.event
 async def on_autopost_success():
@@ -74,7 +74,7 @@ async def on_autopost_success():
 
 
 
-# <------------------[BOT STARTUP]-------------------> #
+# <----------------[BOT STARTUP]------------------> #
 
 @bot.event
 async def on_ready():

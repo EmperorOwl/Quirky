@@ -4,7 +4,7 @@ from discord.ext import commands
 
 
 
-# <--------------------[COG GAME]--------------------> #
+# <------------------[COG GAME]-------------------> #
 
 class cogGame(commands.Cog, name="Children's Toy"):
 
@@ -16,7 +16,7 @@ class cogGame(commands.Cog, name="Children's Toy"):
 
     
 
-  # <-------------------[CMD PLAY]-------------------> #
+  # <-----------------[CMD PLAY]------------------> #
 
   @commands.command(
     name = "play",

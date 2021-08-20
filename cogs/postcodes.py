@@ -5,7 +5,7 @@ from datetime import datetime
 
 
 
-# <-----------------[COG POSTCODES]------------------> #
+# <---------------[COG POSTCODES]-----------------> #
 
 class cogPostcodes(commands.Cog, name="Postcodes"):
 
@@ -16,7 +16,7 @@ class cogPostcodes(commands.Cog, name="Postcodes"):
 
   
 
-  # <----------------[GRP POSTCODES]-----------------> #
+  # <--------------[GRP POSTCODES]----------------> #
 
   @commands.group(
     name = 'postcodes',
@@ -35,7 +35,7 @@ class cogPostcodes(commands.Cog, name="Postcodes"):
 
 
 
-  # <-------------------[CMD VIEW]-------------------> #
+  # <-----------------[CMD VIEW]------------------> #
 
   @grpPostcodes.command(name='view')
   async def cmdView(self, ctx, page_num=None):
@@ -114,7 +114,7 @@ class cogPostcodes(commands.Cog, name="Postcodes"):
 
   
 
-  # <-------------------[CMD FIND]-------------------> #
+  # <-----------------[CMD FIND]------------------> #
   
   @grpPostcodes.command(name='find')
   async def cmdFind(self, ctx, *, search):
@@ -189,7 +189,7 @@ class cogPostcodes(commands.Cog, name="Postcodes"):
 
 
 
-  # <-------------------[CMD ADD]--------------------> #
+  # <-----------------[CMD ADD]-------------------> #
 
   @grpPostcodes.command(name='add')
   @commands.is_owner()
@@ -227,7 +227,7 @@ class cogPostcodes(commands.Cog, name="Postcodes"):
 
   
 
-  # <------------------[CMD DELETE]------------------> #
+  # <----------------[CMD DELETE]-----------------> #
 
   @grpPostcodes.command(name='delete')
   @commands.is_owner()

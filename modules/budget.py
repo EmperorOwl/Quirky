@@ -3,7 +3,7 @@ from replit import db
 
 
 
-# <---------------[CALCULATE SUMMARY]----------------> #
+# <-------------[CALCULATE SUMMARY]---------------> #
 
 def calcSummary(budget):
 
@@ -17,7 +17,7 @@ def calcSummary(budget):
 
 
 
-# <----------------[GET BUDGET EMBED]----------------> #
+# <--------------[GET BUDGET EMBED]---------------> #
 
 def getBudgetEmbed(ctx):
 

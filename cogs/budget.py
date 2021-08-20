@@ -5,7 +5,7 @@ from replit import db
 from modules.budget import getBudgetEmbed
 
 
-# <-------------------[COG BUDGET]-------------------> #
+# <-----------------[COG BUDGET]------------------> #
 
 class cogBudget(commands.Cog, name="Budget Calculator"):
 
@@ -16,7 +16,7 @@ class cogBudget(commands.Cog, name="Budget Calculator"):
 
   
 
-  # <------------------[GRP BUDGET]------------------> #
+  # <----------------[GRP BUDGET]-----------------> #
 
   @commands.group(
     name = 'budget',
@@ -48,7 +48,7 @@ class cogBudget(commands.Cog, name="Budget Calculator"):
 
 
 
-  # <-------------------[CMD VIEW]-------------------> #
+  # <-----------------[CMD VIEW]------------------> #
 
   @grpBudget.command(name='view')
   async def cmdView(self, ctx):
@@ -61,7 +61,7 @@ class cogBudget(commands.Cog, name="Budget Calculator"):
 
 
 
-  # <-------------------[CMD ADD]--------------------> #
+  # <-----------------[CMD ADD]-------------------> #
 
   @grpBudget.command(name='add')
   async def cmdAdd(self, ctx, form, amount: float):
@@ -84,7 +84,7 @@ class cogBudget(commands.Cog, name="Budget Calculator"):
 
 
 
-  # <------------------[CMD RESET]-------------------> #
+  # <----------------[CMD RESET]------------------> #
 
   @grpBudget.command(name='reset')
   async def cmdReset(self, ctx):
@@ -99,7 +99,7 @@ class cogBudget(commands.Cog, name="Budget Calculator"):
 
   
 
-  # <------------------[CMD SETUP]-------------------> #
+  # <----------------[CMD SETUP]------------------> #
 
   @commands.command(
     name = 'budgetsetup',

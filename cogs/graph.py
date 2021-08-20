@@ -4,7 +4,7 @@ from datetime import datetime
 
 
 
-# <-------------------[COG GRAPH]--------------------> #
+# <-----------------[COG GRAPH]-------------------> #
 
 class cogGraph(commands.Cog, name="Graphing Calculator"):
 
@@ -15,7 +15,7 @@ class cogGraph(commands.Cog, name="Graphing Calculator"):
 
 
 
-  # <------------------[CMD GRAPH]-------------------> #
+  # <----------------[CMD GRAPH]------------------> #
 
   @commands.command(
     name = 'graph',
